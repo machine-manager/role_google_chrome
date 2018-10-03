@@ -2,7 +2,7 @@ defmodule RoleGoogleChrome do
 	def role(_tags \\ []) do
 		%{
 			implied_roles:     [RoleGoogleChromeRepo],
-			desired_packages:  ["google-chrome-stable"],
+			desired_packages:  ["google-chrome-beta"],
 			ferm_output_chain:
 				"""
 				# Chrome tries to talk UPnP on all interfaces (probably for Chromecast); we don't want to log it
